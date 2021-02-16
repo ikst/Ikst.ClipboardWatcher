@@ -5,13 +5,17 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ikst.ClipboardWatcher", "Ikst.ClipboardWatcher\Ikst.ClipboardWatcher.csproj", "{DB534D96-9415-4709-AE8B-26026765EAB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{907113A1-D74B-4AA1-B20E-33BB36E6A1A6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B8DC754-131E-4535-8415-C8FC6D2A1DC5}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikst.ClipboardWatcherWpf", "Ikst.ClipboardWatcherWpf\Ikst.ClipboardWatcherWpf.csproj", "{6EB2D863-CDA2-4663-8414-884C15545AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{5F3BD5F3-8927-4447-B205-8E2E655B147A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWpf", "SampleWpf\SampleWpf.csproj", "{7C1567DB-88FB-4A1B-A690-F8F3C7A124AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,18 @@ Global
 		{DB534D96-9415-4709-AE8B-26026765EAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB534D96-9415-4709-AE8B-26026765EAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB534D96-9415-4709-AE8B-26026765EAB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{907113A1-D74B-4AA1-B20E-33BB36E6A1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{907113A1-D74B-4AA1-B20E-33BB36E6A1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{907113A1-D74B-4AA1-B20E-33BB36E6A1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{907113A1-D74B-4AA1-B20E-33BB36E6A1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB2D863-CDA2-4663-8414-884C15545AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB2D863-CDA2-4663-8414-884C15545AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB2D863-CDA2-4663-8414-884C15545AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB2D863-CDA2-4663-8414-884C15545AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3BD5F3-8927-4447-B205-8E2E655B147A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3BD5F3-8927-4447-B205-8E2E655B147A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3BD5F3-8927-4447-B205-8E2E655B147A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3BD5F3-8927-4447-B205-8E2E655B147A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1567DB-88FB-4A1B-A690-F8F3C7A124AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1567DB-88FB-4A1B-A690-F8F3C7A124AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1567DB-88FB-4A1B-A690-F8F3C7A124AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1567DB-88FB-4A1B-A690-F8F3C7A124AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

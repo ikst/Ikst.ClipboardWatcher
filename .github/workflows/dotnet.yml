@@ -6,6 +6,7 @@ on:
     branches: [ master ]
     paths:
     - "Ikst.ClipboardWatcher/*.csproj"
+    - "Ikst.ClipboardWatcherWpf/*.csproj"
   pull_request:
     branches: [ master ]
 
@@ -26,5 +27,7 @@ jobs:
       run: dotnet build --no-restore -c Release
     - name: Test
       run: dotnet test --no-build --verbosity normal -c Release
-    - name: Nuget Push
+    - name: Nuget Push1
       run:  dotnet nuget push Ikst.ClipboardWatcher\bin\Release\*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+    - name: Nuget Push2
+      run:  dotnet nuget push Ikst.ClipboardWatcherWpf\bin\Release\*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json

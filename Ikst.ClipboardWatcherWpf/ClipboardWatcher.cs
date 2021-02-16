@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Forms;
+using System.Windows;
+using System.Windows.Interop;
 
-namespace Ikst.ClipboardWatcher
+namespace Ikst.ClipboardWatcherWpf
 {
 
     /// <summary>
     /// クリップボード監視クラス
     /// </summary>
-    public class ClipboardWatcher : Form
+    public class ClipboardWatcher
     {
 
         /// <summary>
@@ -17,6 +16,7 @@ namespace Ikst.ClipboardWatcher
         /// </summary>
         private const int WM_CLIPBOARDUPDATE = 0x031D;
         private const int WM_DRAWCLIPBOARD = 0x0308;
+
 
         /// <summary>
         /// イベントデータ
@@ -46,6 +46,19 @@ namespace Ikst.ClipboardWatcher
         /// </summary>
         public bool IsStarted { get; private set; }
 
+        private IntPtr Handle { get; }
+
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="window"></param>
+        public ClipboardWatcher(Window window)
+        {
+            Handle = new WindowInteropHelper(window).Handle;
+
+            HwndSource hwndSource = HwndSource.FromHwnd(Handle);
+            hwndSource.AddHook(WndProc);
+        }
 
         /// <summary>
         /// 開始
@@ -65,14 +78,9 @@ namespace Ikst.ClipboardWatcher
             IsStarted = false;
         }
 
-
-        /// <summary>
-        /// WndProc
-        /// </summary>
-        /// <param name="m"></param>
-        protected override void WndProc(ref Message m)
+        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
-            if (m.Msg == WM_CLIPBOARDUPDATE)
+            if (msg == WM_CLIPBOARDUPDATE)
             {
 
                 // クリップボードデータの取得
@@ -85,29 +93,18 @@ namespace Ikst.ClipboardWatcher
                     Change(this, e);
                 }
 
+                handled = true;
+            }
 
-                m.Result = IntPtr.Zero;
-            }
-            else
-            {
-                base.WndProc(ref m);
-            }
+            return IntPtr.Zero;
         }
 
-        /// <summary>Dispose</summary>
-        /// <param name="disposing"></param>
-        protected override void Dispose(bool disposing)
-        {
-            Stop();
-            base.Dispose(disposing);
-        }
 
         /// <summary>デストラクタ</summary>
         ~ClipboardWatcher()
         {
-            Dispose();
+            Stop();
         }
 
     }
-
 }

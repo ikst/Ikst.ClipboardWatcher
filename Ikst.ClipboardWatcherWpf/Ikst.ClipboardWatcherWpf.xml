@@ -1,65 +1,61 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Ikst.ClipboardWatcher</name>
+        <name>Ikst.ClipboardWatcherWpf</name>
     </assembly>
     <members>
-        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher">
+        <member name="T:Ikst.ClipboardWatcherWpf.ClipboardWatcher">
             <summary>
             クリップボード監視クラス
             </summary>
         </member>
-        <member name="F:Ikst.ClipboardWatcher.ClipboardWatcher.WM_CLIPBOARDUPDATE">
+        <member name="F:Ikst.ClipboardWatcherWpf.ClipboardWatcher.WM_CLIPBOARDUPDATE">
             <summary>
             クリップボード更新メッセージ
             </summary>
         </member>
-        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher.ChangeEventArgs">
+        <member name="T:Ikst.ClipboardWatcherWpf.ClipboardWatcher.ChangeEventArgs">
             <summary>
             イベントデータ
             </summary>
         </member>
-        <member name="P:Ikst.ClipboardWatcher.ClipboardWatcher.ChangeEventArgs.Data">
+        <member name="P:Ikst.ClipboardWatcherWpf.ClipboardWatcher.ChangeEventArgs.Data">
             <summary>クリップボードデータ</summary>
         </member>
-        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher.ChangeEventHandler">
+        <member name="T:Ikst.ClipboardWatcherWpf.ClipboardWatcher.ChangeEventHandler">
             <summary>
             イベントハンドラ
             </summary>
             <param name="sender">イベントソース</param>
             <param name="e">イベントデータ</param>
         </member>
-        <member name="E:Ikst.ClipboardWatcher.ClipboardWatcher.Change">
+        <member name="E:Ikst.ClipboardWatcherWpf.ClipboardWatcher.Change">
             <summary>
             クリップボードの内容に変更が発生した場合に発生します。
             </summary>
         </member>
-        <member name="P:Ikst.ClipboardWatcher.ClipboardWatcher.IsStarted">
+        <member name="P:Ikst.ClipboardWatcherWpf.ClipboardWatcher.IsStarted">
             <summary>
             監視状態
             </summary>
         </member>
-        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Start">
+        <member name="M:Ikst.ClipboardWatcherWpf.ClipboardWatcher.#ctor(System.Windows.Window)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="M:Ikst.ClipboardWatcherWpf.ClipboardWatcher.Start">
             <summary>
             開始
             </summary>
         </member>
-        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Stop">
+        <member name="M:Ikst.ClipboardWatcherWpf.ClipboardWatcher.Stop">
             <summary>
             終了
             </summary>
         </member>
-        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.WndProc(System.Windows.Forms.Message@)">
-            <summary>
-            WndProc
-            </summary>
-            <param name="m"></param>
-        </member>
-        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Dispose(System.Boolean)">
-            <summary>Dispose</summary>
-            <param name="disposing"></param>
-        </member>
-        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Finalize">
+        <member name="M:Ikst.ClipboardWatcherWpf.ClipboardWatcher.Finalize">
             <summary>デストラクタ</summary>
         </member>
     </members>

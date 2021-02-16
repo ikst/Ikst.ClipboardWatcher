@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ikst.ClipboardWatcher\Ikst.ClipboardWatcher.csproj" />
+    <ProjectReference Include="..\Ikst.ClipboardWatcherWpf\Ikst.ClipboardWatcherWpf.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,23 +1,25 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5.0-windows</TargetFrameworks>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
     <Version>0.0.3</Version>
     <Authors>ikst</Authors>
-    <Description>Clipboard monitoring library for windows forms applications.
-When the clipboard is modified, an event is fired.</Description>
+    <Description>Clipboard monitoring library for wpf applications.
+When the clipboard is modified, an event is fired.
+</Description>
     <Copyright>MIT</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/ikst/Ikst.ClipboardWatcher</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Clipboard</PackageTags>
     <PackageReleaseNotes>Please check the following.
-https://github.com/ikst/Ikst.ClipboardWatcher/blob/master/README.md</PackageReleaseNotes>
+https://github.com/ikst/Ikst.ClipboardWatcher/blob/master/README.md
+</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\oihso\source\repos\Ikst.ClipboardWatcher\Ikst.ClipboardWatcher\Ikst.ClipboardWatcher.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\oihso\source\repos\Ikst.ClipboardWatcher\Ikst.ClipboardWatcherWpf\Ikst.ClipboardWatcherWpf.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
