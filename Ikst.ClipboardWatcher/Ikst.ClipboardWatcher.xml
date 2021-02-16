@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ikst.ClipboardWatcher</name>
+    </assembly>
+    <members>
+        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher">
+            <summary>
+            クリップボード監視クラス
+            </summary>
+        </member>
+        <member name="F:Ikst.ClipboardWatcher.ClipboardWatcher.WM_CLIPBOARDUPDATE">
+            <summary>
+            クリップボード更新メッセージ
+            </summary>
+        </member>
+        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher.ChangeEventArgs">
+            <summary>
+            イベントデータ
+            </summary>
+        </member>
+        <member name="T:Ikst.ClipboardWatcher.ClipboardWatcher.ChangeEventHandler">
+            <summary>
+            イベントハンドラ
+            </summary>
+            <param name="sender">イベントソース</param>
+            <param name="e">イベントデータ</param>
+        </member>
+        <member name="E:Ikst.ClipboardWatcher.ClipboardWatcher.Change">
+            <summary>
+            クリップボードの内容に変更が発生した場合に発生します。
+            </summary>
+        </member>
+        <member name="P:Ikst.ClipboardWatcher.ClipboardWatcher.IsStarted">
+            <summary>
+            監視状態
+            </summary>
+        </member>
+        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Start">
+            <summary>
+            開始
+            </summary>
+        </member>
+        <member name="M:Ikst.ClipboardWatcher.ClipboardWatcher.Stop">
+            <summary>
+            終了
+            </summary>
+        </member>
+    </members>
+</doc>

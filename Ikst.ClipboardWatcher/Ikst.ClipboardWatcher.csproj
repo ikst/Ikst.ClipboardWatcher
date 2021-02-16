@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net5.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>0.0.1</Version>
+    <Authors>ikst</Authors>
+    <Description>Clipboard monitoring library for .net windows applications.
+When the clipboard is modified, an event is fired.</Description>
+    <Copyright>MIT</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\oihso\source\repos\Ikst.ClipboardWatcher\Ikst.ClipboardWatcher\Ikst.ClipboardWatcher.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
