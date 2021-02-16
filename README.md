@@ -12,9 +12,9 @@ For Wpf applications, use "Ikst.ClipboardWatcherWpf ".
 Note that it does not work with console applications.  
 
 [e.g.] 
-When the clipboard content is updated, it will be displayed in the message box if it is in text format.
+When the clipboard content is updated, it will be displayed in the message box if it is in text format.  
 
-ÅÉWindows FromsÅÑ
+Windows Froms
 ```c#
 using Ikst.ClipboardWatcher;
 
@@ -40,7 +40,7 @@ public partial class Form1 : Form
 }
 ```
 
-ÅÉWPFÅÑ
+WPF
 ```c#
 using Ikst.ClipboardWatcherWpf;
 
