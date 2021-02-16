@@ -27,9 +27,8 @@ namespace Sample
                     MessageBox.Show(txt);
                 }
             };
-
             cw.Start();
-        }
 
+        }
     }
 }
